@@ -15,4 +15,14 @@ class UsersController < ApplicationController
     render :new
   end
 
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      flash[:notice] = "Your user name has been established."
+      redirect_to "/"
+    else
+      flash[:alert] = "!ERROR! Please establish a user name."
+    end
+  end
+
 end
