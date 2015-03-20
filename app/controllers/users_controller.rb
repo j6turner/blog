@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
     render :index
   end
 
@@ -12,6 +11,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @users = User.all
     render :new
   end
 
