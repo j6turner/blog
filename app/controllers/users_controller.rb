@@ -1,12 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    render :index
-  end
-
-  def show
-    @user = User.find(params[:id])
-    render :show
+    @users = User.all
   end
 
   def new
@@ -19,11 +14,23 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "Your user name has been established."
-      redirect_to "/users"
+      redirect_to user_path(@user)
     else
       flash[:alert] = "!ERROR! Please establish a user name."
-      redirect_to :back
+      @users = User.all
+      render :new
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    render :show
+  end
+
+private
+
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation)
   end
 
 end
