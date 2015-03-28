@@ -5,7 +5,7 @@ h1  {
 }
 
 h2  {
-  font-family: Verdana, Helvetica;
+  font-family: Courier, Helvetica;
   color: #003300;
 }
 
@@ -15,7 +15,7 @@ h3  {
 }
 
 h4  {
-  font-family: Times, Helvetica;
+  font-family: Courier, Helvetica;
   color: #197C96;
 }
 
@@ -35,6 +35,21 @@ body {
 
 .become {
   border: 2px solid #354343;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flash {
+  padding: 10px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #B80000;
+  text-align: center;
+}
+
+.loginform {
+  border: 2px solid #B80000;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
