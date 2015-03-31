@@ -5,13 +5,13 @@ h1  {
 }
 
 h2  {
-  font-family: Courier, Helvetica;
-  color: #003300;
+  font-family: Helvetica;
+  color: #FFFFFF;
 }
 
 h3  {
   font-family: Times, Helvetica;
-  color: #003300;
+  color: #FFFFFF;
 }
 
 h4  {
@@ -30,7 +30,7 @@ h6  {
 }
 
 body {
-  background-color: #EBEBE0;
+  background-color: #A2A7A7;
 }
 
 .become {
@@ -40,11 +40,18 @@ body {
   text-align: center;
 }
 
-.flash {
+.errors {
+  background-color: #85ADAD;
+  border: 2px solid #85ADAD;
+  border-radius: 10px;
   padding: 10px;
   font-family: Helvetica;
   font-weight: bold;
-  color: #B80000;
+  color: #FFFFFF;
+}
+
+.flash {
+  color: #B20000;
   text-align: center;
 }
 
