@@ -1,0 +1,12 @@
+<%=form_for @post do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br />
+  <br />
+  <%= f.label :content %>
+  <br>
+  <%= f.text_area :content, rows: 10, class:"form-control" %>
+  <br />
+  <br />
+  <%= f.submit "Post", class: ['btn-danger', 'btn-md'] %>
+<% end %>
