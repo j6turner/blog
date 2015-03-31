@@ -1,28 +1,30 @@
-== README
+Blog
+==============
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Ruby on Rails v.4.2.1 blog app allows user to add posts and/or comment on posts.
 
-Things you may want to cover:
+Gems include pg, jquery-rails, bcrypt-ruby, quiet_assests, rspec-rails, capybara, launchy, and shoulda-matchers, among others.
 
-* Ruby version
+Installation and Usage
+------------
 
-* System dependencies
+Clone or download this repository and enter `$ cd Desktop/blog` into the command line of the terminal. In another terminal window, enter `postgres`. Return to the original terminal window to enter the following statements.
+```
+$ rake db:create
+$ rake db:migrate
+$ gem install bundler
+$ bundle
+$ rails server
+```
 
-* Configuration
+Open a Web browser. Navigate to *localhost:3000*.
 
-* Database creation
+Author
+------
 
-* Database initialization
+J. TURNER
 
-* How to run the test suite
+License
+-------
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+MIT license
