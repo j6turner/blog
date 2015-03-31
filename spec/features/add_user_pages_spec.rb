@@ -10,7 +10,7 @@ describe "add user" do
     fill_in 'Password', :with => 'testword'
     fill_in 'Password confirmation', :with => 'testword'
     click_on 'Sign Up'
-    expect(page).to have_content 'Your user name has been established.'
+    expect(page).to have_content 'Successfully logged in.'
   end
 
   it "gives error when no name is entered" do
