@@ -11,10 +11,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Your user name has been established."
+      flash[:notice] = "Successfully logged in."
       redirect_to user_path(@user)
     else
-      flash[:alert] = "!ERROR! Please establish a user name."
+      flash[:alert] = "!ERROR! The form is incomplete."
       @users = User.all
       render :new
     end
