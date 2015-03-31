@@ -17,8 +17,28 @@ describe "add user" do
     visit new_user_path
     fill_in 'Name', :with => ''
     click_on 'Sign Up'
-    save_and_open_page
-    expect(page).to have_content '!ERROR! Please establish a user name.'
+    expect(page).to have_content '!ERROR! The form is incomplete.'
+  end
+
+  it "gives error when no email is entered" do
+    visit new_user_path
+    fill_in 'Email', :with => ''
+    click_on 'Sign Up'
+    expect(page).to have_content '!ERROR! The form is incomplete.'
+  end
+
+  it "gives error when no password is entered" do
+    visit new_user_path
+    fill_in 'Password', :with => ''
+    click_on 'Sign Up'
+    expect(page).to have_content '!ERROR! The form is incomplete.'
+  end
+
+  it "gives error when password is not confirmed" do
+    visit new_user_path
+    fill_in 'Password confirmation', :with => ''
+    click_on 'Sign Up'
+    expect(page).to have_content '!ERROR! The form is incomplete.'
   end
 
 end
