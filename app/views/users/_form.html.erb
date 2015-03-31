@@ -2,7 +2,7 @@
   <%= render "layouts/errors", :object => @user %>
 </div>
 
-<div class="userform"
+<div class="userform">
   <%= form_for User.new do |f| %>
     <%= f.label :name, :required => true %>
     <br />
