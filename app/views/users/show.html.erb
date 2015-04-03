@@ -1,10 +1,22 @@
 <h1>The Blog</h1>
 <hr />
-<p><%= link_to "Return Home", root_path %></p>
-<h2><%= @user.name %>'s Posts</h2>
 
-<div class="row">
+<p>
+  ||
+  <%= link_to "Return Home", root_path %>
+  ||
+  <%= link_to "Post Your Thoughts", new_post_path %>
+  ||
+</p>
 
-<%= link_to 'Post', new_user_post_path %>  
+<h2><%= @user.name %>'s Page</h2>
 
+<div class="allposts">
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <%= link_to post.name, post_path(post) %>
+      </li>
+    <% end %>
+  </ul>
 </div>

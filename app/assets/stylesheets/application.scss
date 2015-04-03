@@ -17,6 +17,24 @@ h3  {
   color: #FFFFFF;
 }
 
+h3.signup {
+  background-color: #434C4C;
+  font-family: Times, Helvetica;
+  color: #FFFFFF;
+  border: 2px solid #434C4C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h3.login {
+  background-color: #434C4C;
+  font-family: Times, Helvetica;
+  color: #FFFFFF;
+  border: 2px solid #434C4C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 h4  {
   font-family: Courier, Helvetica;
   color: #197C96;
@@ -35,6 +53,13 @@ h6  {
 body {
   background-color: #A2A7A7;
   padding: 30px;
+}
+
+.allposts {
+  background-color: #197C96;
+  border: 2px solid #197C96;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .become {
@@ -66,6 +91,14 @@ body {
   text-align: center;
 }
 
+.namepassword {
+  background-color: #434C4C;
+  color: #FFFFFF;
+  border: 2px solid #434C4C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .userform {
   border: 2px solid #354343;
   border-radius: 10px;
@@ -89,4 +122,9 @@ a:hover {
 
 li {
   font-family: Courier, Helvetica;
+}
+
+.btn:hover {
+  background-color: #FF9933;
+  font-weight: bold;
 }

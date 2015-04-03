@@ -7,8 +7,8 @@ describe "add user" do
     click_on 'Become a Blogger'
     fill_in 'Name', :with => 'testname'
     fill_in 'Email', :with => 'test@test.com'
-    fill_in 'Password', :with => 'testword'
-    fill_in 'Password confirmation', :with => 'testword'
+    fill_in 'Password', :with => '12345678'
+    fill_in 'Password confirmation', :with => '12345678'
     click_on 'Sign Up'
     expect(page).to have_content 'Successfully logged in.'
   end
