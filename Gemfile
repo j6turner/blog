@@ -18,7 +18,9 @@ group :development do
 end
 
 group :test, :development do
+  gem 'database_cleaner'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'capybara'
   gem 'launchy'
   gem 'pry'
@@ -26,4 +28,5 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'poltergeist'
 end
