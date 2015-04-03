@@ -4,15 +4,6 @@
 <h2><%= @user.name %>'s Posts</h2>
 
 <div class="row">
-  <% if current_user.posts.any? %>
-    <% current_user.posts.each do |post| %>
-      <%= link_to post_path(post) do %>
-        <h3><% post.name %></h3>
-        <h5><% post.user.name %> || <% post.date %></h5>
-      <% end %>
-      <h4><% post.content %></h4>
-    <% end %>
-  <% else %>
-    <h2>The bin is empty.</h2>
-  <% end %>
+  
+
 </div>
