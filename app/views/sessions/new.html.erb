@@ -4,16 +4,16 @@
 <div class="loginform">
   <h3>Log In</h3>
   <h6>- The Gateway to Posts and Comments -</h6>
-    <div class="namepassword">
-      <%=form_tag log_in_path do%>
-      <%=label_tag :name %>
-      <%=text_field_tag :name %>
-      <br />
-      <br />
-      <%=label_tag :password %>
-      <%=password_field_tag :password %>
-    </div>
-      <br />
+    <br />
+    <%=form_tag log_in_path do%>
+    <%=label_tag :name %>
+    <%=text_field_tag :name %>
+    <br />
+    <br />
+    <%=label_tag :password %>
+    <%=password_field_tag :password %>
+    <br />
+    <br />
   <%=submit_tag "Log In", class: 'btn btn-success' %>
   <%end%>
 </div>
