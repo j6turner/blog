@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 h1  {
   font-family: Times, Helvetica;
   color: #197C96;
@@ -31,6 +34,7 @@ h6  {
 
 body {
   background-color: #A2A7A7;
+  padding: 30px;
 }
 
 .become {

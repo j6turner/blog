@@ -7,6 +7,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
 
 group :development do
